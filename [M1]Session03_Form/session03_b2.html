@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p><h1>Market Research Survey</h1></p>
+        <p>Please take a few moments to complete this satisfaction survey.</p><hr>
+        <p>Please rate your level of sactisfaction of agreement with the following statements </p>
+        <p>
+            <label for="q1"><b>What is your age range?</b></label><br>
+            <select id="q1">
+                <option name="age_range" value="18-24">18-24</option>
+                <option name="age_range" value="24-27">24-27</option>
+            </select>
+        </p>
+        <p>
+            <label for="q2"><b>What is your yearly income range?</b></label><br>
+            <select id="q2">
+                <option name="income_range" value="18-24">$0-$25000</option>
+                <option name="income_range" value="24-27">$25000-$27000</option>
+            </select>
+        </p>
+        <p>
+            <b>Gender Identity</b><br>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" name="gender" id="nonbinary" value="nonbinary">
+            <label for="nonbinary">Others</label><br>
+            <input type="text">
+        </p>
+        <p>
+            <b>Which of products have your purchased in the last 2 months? Please check all that apply.</b><br>
+            <input type="checkbox" id="product1" value="product1" name="procduct">
+            <label for="product1">Product 1</label><br>
+            <input type="checkbox" id="product1" value="product1" name="procduct">
+            <label for="product1">Product 2</label><br>
+            <input type="checkbox" id="product1" value="product1" name="procduct">
+            <label for="product1">Product 3</label>
+        </p>
+        <p>
+            <b>How often would your use our new product?</b><br>
+            <input type="radio" name="how_often" id="daily" value="daily">
+            <label for="daily">Daily</label><br>
+            <input type="radio" name="how_often" id="weekly" value="weekly">
+            <label for="weekly">Weekly</label><br>
+            <input type="radio" name="how_often" id="monthly" value="monthly">
+            <label for="monthly">Monthly</label>
+        </p>
+
+        
+        <table border="1">
+            <tr>
+                <td></td>
+                <td>Strongly Disagree</td>
+                <td>Disagree</td>
+                <td>Agree</td>
+                <td>Strongly Agree</td>
+            </tr>
+            <tr>
+                <td><b>Our products are priced fairly</b></td>
+                <td>
+                    <input 
+                        type="radio" 
+                        name="price_fairly" 
+                        value="1" 
+                        id="price_fairly"
+                    />
+                    <br>
+                    <label for="price_fairly">1</label>
+                </td>
+                <td>
+                    <input 
+                        type="radio" 
+                        name="price_fairly" 
+                        value="2" 
+                        id="price_fairly"
+                    />
+                    <br>
+                    <label for="price_fairly">2</label>
+                </td>
+                <td>
+                    <input 
+                        type="radio" 
+                        name="price_fairly" 
+                        value="3" 
+                        id="price_fairly"
+                    />
+                    <br>
+                    <label for="price_fairly">3</label>
+                </td>
+                <td>
+                    <input 
+                        type="radio" 
+                        name="price_fairly" 
+                        value="4" 
+                        id="price_fairly"
+                    />
+                    <br>
+                    <label for="price_fairly">4</label>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Our products are high quality</b></td>
+                <td>
+                    <input 
+                    type="radio" 
+                    name="high_quality" 
+                    value="1" 
+                    id="high_quality"
+                    />
+                <br>
+                <label for="high_quality">1</label>
+                </td>
+                <td>
+                    <input 
+                    type="radio" 
+                    name="high_quality" 
+                    value="2" 
+                    id="high_quality"
+                    />
+                    <br>
+                    <label for="high_quality">2</label>
+                </td>
+                <td>
+                    <input 
+                    type="radio" 
+                    name="high_quality" 
+                    value="3" 
+                    id="high_quality"
+                    />
+                    <br>
+                    <label for="high_quality">3</label>
+                </td>
+                <td>
+                    <input 
+                    type="radio" 
+                    name="high_quality" 
+                    value="4" 
+                    id="high_quality"
+                    />
+                    <br>
+                    <label for="high_quality">4</label>
+                </td>
+            </tr>
+            <tr>
+                <td><b>You good recommend our product to a friend or co-woker</b></td>
+                <td>
+                    <input 
+                    type="radio" 
+                    name="good_recommend" 
+                    value="1" 
+                    id="good_recommend"
+                    />
+                    <br>
+                    <label for="high_quality">1</label>
+                </td>
+                <td>
+                    <input 
+                    type="radio" 
+                    name="good_recommend" 
+                    value="2" 
+                    id="good_recommend"
+                    />
+                    <br>
+                    <label for="high_quality">2</label>
+                </td>
+                <td>
+                    <input 
+                    type="radio" 
+                    name="good_recommend" 
+                    value="3" 
+                    id="good_recommend"
+                    />
+                    <br>
+                    <label for="high_quality">3</label>
+                </td>
+                <td>
+                    <input 
+                    type="radio" 
+                    name="good_recommend" 
+                    value="4" 
+                    id="good_recommend"
+                    />
+                    <br>
+                    <label for="high_quality">4</label>
+                </td>
+            </tr>   
+        </table>
+        <p><button>Submit</button></p>
+    </form>
+</body>
+</html>

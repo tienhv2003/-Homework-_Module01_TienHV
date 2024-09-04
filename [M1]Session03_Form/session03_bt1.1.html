@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box1{ 
+            width:450px; 
+            border: 10px solid aqua ;
+            margin: 20px;
+            
+        
+        }
+        .box2{
+            background-color: white;
+            padding:5px;
+        }
+        .thanh1{
+            background-color: orange;
+            margin: auto;  
+            text-align: center;
+            padding: 5px;
+        } 
+        .thanh2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <p class="thanh1" style="color:white">SỞ THÍCH CỦA BẠN</p>
+            <form method="GET" action="https://www.google.com">
+                <table>
+                    <tr>
+                        <td><label for="yourname">Họ và tên:</label></td>
+                        <td><input type="text" placeholder="" id="yourname" name="yourname"></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="email">Email:</label></td>
+                        <td><input type="email" placeholder="" id="email" name="email"></td>
+                    </tr>
+                </table>
+                <div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><label for="so_thich">Sở thích:</label></td>
+                                <td><input type="checkbox" id="the_thao" value="Thể thao" name="the_thao">
+                                    <label for="the_thao" style="color:orange">Thể thao</label>
+                                </td>
+                                <td><input type="checkbox" id="doc_sach" value="Đọc sách" name="doc_sach">
+                                    <label for="doc_sach" style="color:orange">Đọc sách</label><br>
+                                </td>
+                                <td><input type="checkbox" id="am_nhac" value="Âm nhạc" name="am_nhac">
+                                    <label for="the_thao" style="color:orange">Âm nhạc</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="checkbox" id="luot_web" value="Lướt web" name="luot_web">
+                                    <label for="luot_web" style="color:orange">Lướt web</label>
+                                </td>
+                                <td><input type="checkbox" id="choi_game" value="Chơi game" name="choi_game">
+                                    <label for="choi_game" style="color:orange">Chơi game</label>
+                                </td>
+                                <td><input type="checkbox" id="dien_anh" value="Điện ảnh" name="dien_anh">
+                                    <label for="dien_anh" style="color:orange">Điện ảnh</label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="checkbox" id="du_lich" value="Du lịch" name="du_lich">
+                                    <label for="doc_sach" style="color:orange">Du lịch</label>
+                                </td>
+                            </tr>
+                        </table>                                 
+                    </div>
+                </div>
+                <div class="thanh2"><input type="submit" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại" >
+                </div>  
+            </form>
+        </div>
+    </div>
+</body>
+</html>

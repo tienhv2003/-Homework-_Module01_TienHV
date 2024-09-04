@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container{
+            border: 1px solid black;
+            padding: 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form method="GET" action="https:www.google.com">
+            <div>
+                <label for="ho_va_ten">Họ và tên:</label><br>
+                <input type="text" placeholder="" id="ho_va_ten">
+            </div><br>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="" id="email">
+            </div><br>
+            <div>
+                <label for="so_dien_thoai">Số điện thoại:</label><br>
+                <input type="text" placeholder="" id="so_dien_thoai">
+            </div><br>
+            <div>
+                Giới tính:<br>
+                <input name="gender" type="radio" id="nam" value="nam">
+                <label for="nam">Nam</label>
+                <input name="gender" type="radio" id="nu" value="nu">
+                <label for="nu">Nữ</label>
+                <input name="gender" type="radio" id="others" value="khac">
+                <label for="others">Others</label>
+            </div><br>
+            <button>Send</button>
+            <input type="reset" value="Xóa">
+        </form>
+    </div>
+    
+</body>
+</html>
