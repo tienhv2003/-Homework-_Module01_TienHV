@@ -1,0 +1,23 @@
+.img_container{
+    display: flex;
+    justify-content: center;
+    height:70vh;
+    text-align: center;
+}
+.contents{
+    justify-content: center;
+    place-items: center
+}
+table{
+    padding: 20px;
+
+}
+td{
+    padding:5px;
+}
+#intro,#t5,#t6,#t7,#t8{
+    margin: 20px;
+}
+p{
+    margin-left:50px;
+}
