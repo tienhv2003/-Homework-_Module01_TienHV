@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container1{
+    margin:20px;
+}
+
+.container1 .header{
+    width:100%;
+    color:white;
+    background-color:#343a40;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    font-weight: bolder;
+}
+
+.container1 .content1{
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 220px;
+    padding-right: 220px;
+    align-items: center;
+    color:#6c757d
+}
+
+.container1 .content1 h2{
+    font-size: 40px;
+}
+
+.container1 .content1 .direction1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bt1{
+    color: white;
+    padding: 5px 10px;
+    background-color:#007bff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.bt2{
+    color: white;
+    padding: 5px 10px;
+    background-color:#6c757d;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.text1{
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.container2{
+    margin: 20px;
+    background-color: #f8f9fa;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:50px;
+}
+.container2 .card{
+    width: 350px;
+    border-radius: 5px;
+    box-shadow:  0px 0px 3px 0px rgba(51,49,49,0.75);
+}
+
+.container2 img{
+    width:100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+
+}
+
+.container2 .text2{
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #6c757d;
+}
+
+.container2 .direction2{
+    padding-left: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.container2 .direction2 .dir2_1 a{
+    padding:1.5px;
+    border: 1px solid #343a40;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.dir2_1{
+    display: flex;
+    justify-content: start;
+    gap:0;
+}
+
+.container2 .direction2 span{
+    position: absolute;
+    top:3px;
+    right:10px;
+    color: #6c757d;
+}
+
+
