@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bai 9</h1>
+    <pre>
+        Dựa trên ảnh bạn cung cấp, các phép so sánh trong JavaScript có các mục đích khác nhau. Mình sẽ giải thích từng phép so sánh:
+
+1. **`a == b`** (Phép so sánh lỏng lẻo):
+   - **Mục đích**: So sánh **giá trị** của hai biến `a` và `b`, nhưng không so sánh kiểu dữ liệu.
+   - Nếu `a` và `b` có cùng giá trị, thì kết quả sẽ là `true` ngay cả khi chúng có kiểu dữ liệu khác nhau.
+   
+   Ví dụ:
+   ```javascript
+   let a = 5;
+   let b = "5";
+   console.log(a == b);  // true (vì chỉ so sánh giá trị)
+   ```
+
+2. **`a === b`** (Phép so sánh nghiêm ngặt):
+   - **Mục đích**: So sánh cả **giá trị** và **kiểu dữ liệu** của `a` và `b`.
+   - Nếu `a` và `b` có cùng giá trị nhưng khác kiểu dữ liệu, kết quả sẽ là `false`.
+   
+   Ví dụ:
+   ```javascript
+   let a = 5;
+   let b = "5";
+   console.log(a === b);  // false (vì một cái là số, một cái là chuỗi)
+   ```
+
+3. **`a != b`** (Phép so sánh khác lỏng lẻo):
+   - **Mục đích**: So sánh **giá trị** của `a` và `b`, nhưng không so sánh kiểu dữ liệu.
+   - Nếu `a` và `b` không có cùng giá trị, kết quả sẽ là `true`. Nếu giá trị giống nhau, sẽ là `false`.
+   
+   Ví dụ:
+   ```javascript
+   let a = 5;
+   let b = "6";
+   console.log(a != b);  // true (giá trị khác nhau)
+   ```
+
+4. **`a !== b`** (Phép so sánh khác nghiêm ngặt):
+   - **Mục đích**: So sánh cả **giá trị** và **kiểu dữ liệu** của `a` và `b`.
+   - Nếu giá trị hoặc kiểu dữ liệu khác nhau, kết quả sẽ là `true`.
+   
+   Ví dụ:
+   ```javascript
+   let a = 5;
+   let b = "5";
+   console.log(a !== b);  // true (vì kiểu dữ liệu khác nhau)
+   ```
+
+### Tóm tắt:
+- `==` và `!=` chỉ so sánh giá trị.
+- `===` và `!==` so sánh cả giá trị và kiểu dữ liệu.
+
+    </pre>
+
+    <script src="../file javascripts/bai9.js"></script>
+</body>
+</html>

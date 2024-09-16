@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bai 10</h1>
+    <pre>
+        Trong JavaScript (và nhiều ngôn ngữ lập trình khác), `a++` và `++a` đều là các toán tử tăng, nhưng chúng có sự khác biệt về thời điểm thực hiện việc tăng giá trị của biến `a`.
+
+### 1. **`a++` (Hậu tố - Postfix Increment)**
+   - **Giải thích**: Toán tử hậu tố `a++` sẽ **trả về giá trị hiện tại của `a` trước**, sau đó **tăng `a` lên 1**.
+   - **Cách hoạt động**: Giá trị của `a` được sử dụng trước, và sau đó `a` mới được tăng lên.
+   
+   **Ví dụ**:
+   ```javascript
+   let a = 5;
+   let b = a++;   // b = 5, a = 6
+   console.log(b);  // 5
+   console.log(a);  // 6
+   ```
+   Ở đây, `a++` trước tiên trả về giá trị của `a` là 5, và sau đó mới tăng `a` lên 6. Do đó, `b` nhận giá trị 5, còn `a` được tăng lên 6 sau đó.
+
+### 2. **`++a` (Tiền tố - Prefix Increment)**
+   - **Giải thích**: Toán tử tiền tố `++a` sẽ **tăng giá trị của `a` lên 1 trước**, rồi **trả về giá trị đã tăng**.
+   - **Cách hoạt động**: `a` được tăng giá trị lên trước, sau đó giá trị mới của `a` sẽ được sử dụng.
+   
+   **Ví dụ**:
+   ```javascript
+   let a = 5;
+   let b = ++a;   // b = 6, a = 6
+   console.log(b);  // 6
+   console.log(a);  // 6
+   ```
+   Ở đây, `++a` tăng `a` lên 6 trước, rồi gán giá trị này cho `b`. Do đó, cả `b` và `a` đều có giá trị là 6.
+
+### Tóm tắt:
+- **`a++` (hậu tố)**: Tăng giá trị **sau** khi sử dụng. Ví dụ, giá trị cũ được sử dụng, sau đó `a` mới tăng lên.
+- **`++a` (tiền tố)**: Tăng giá trị **trước** khi sử dụng. Ví dụ, giá trị được tăng lên và sử dụng ngay lập tức.
+
+
+    </pre>
+</body>
+</html>
