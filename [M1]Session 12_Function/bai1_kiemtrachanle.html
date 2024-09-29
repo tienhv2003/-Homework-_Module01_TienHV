@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bai1_kiem_tra_tinh_chan_le</h1>
+    <script>
+        let arrNumber = [];
+        for(let i = 0; i < 3; i++){
+            let n  = +prompt("get number "+ (i+1) +"th" );
+            arrNumber.push(n);
+        }
+        console.log("input array", arrNumber);
+        function checker(){
+            for(let i = 0; i < 3; i++){
+                if(arrNumber[i] % 2 == 1){
+                    console.log(arrNumber[i] + " is odd");
+                }
+                else{
+                    console.log(arrNumber[i] + " is even");
+                }
+            }
+        }
+        checker();
+    </script>
+</body>
+</html>

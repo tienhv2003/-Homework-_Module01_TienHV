@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm chuỗi trong mảng</title>
+</head>
+<body>
+    <h1>Bài: Tìm chuỗi trong mảng</h1>
+
+    <p id="result"></p> 
+
+    <script>
+        // Nhập số lượng phần tử của mảng
+        let arrLength = +prompt("Nhập số lượng phần tử của mảng:");
+        let randomArray = [];
+
+        // Nhập từng phần tử cho mảng
+        for (let i = 0; i < arrLength; i++) {
+            let element = prompt("Nhập vào phần tử thứ " + (i + 1) + " của mảng:");
+            randomArray.push(element);
+        }
+
+        // Nhập chuỗi cần tìm kiếm
+        let searchString = prompt("Nhập chuỗi cần tìm kiếm:");
+
+        // Hàm tìm kiếm các phần tử có chứa chuỗi
+        function findMatchingElements(arr, str) {
+            let matches = []; 
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i].includes(str)) { 
+                    matches.push(arr[i]);
+                }
+            }
+            return matches;
+        }
+
+        // Gọi hàm và lưu kết quả
+        let result = findMatchingElements(randomArray, searchString);
+
+        // Hiển thị kết quả lên giao diện
+        if (result.length > 0) {
+            document.getElementById("result").innerText = "Các phần tử chứa chuỗi '" + searchString + "' là: " + result.join(", ");
+        } else {
+            document.getElementById("result").innerText = "Không có phần tử nào chứa chuỗi '" + searchString + "'.";
+        }
+    </script>
+</body>
+</html>

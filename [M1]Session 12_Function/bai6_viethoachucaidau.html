@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viet hoa chu cai dau</title>
+</head>
+<body>
+    <h1>Bai 6 Viet hoa chu cai dau</h1>
+    <p id="result"></p>
+    <script>
+        let myString = prompt("Nhap mot chuoi bat ki: ");
+        function capitalizeFirstLetters(str){
+            let words = str.split(" ");
+            for(let i = 0; i < words.length; i++){
+                if(words.length > 0){
+                    words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+                }
+            }
+        return words.join(" ");
+        }
+        let result = capitalizeFirstLetters(myString);
+        document.getElementById("result").innerText = "Chuoi sau khi viet hoa chu cai dau la: " + result;
+    </script>
+</body>
+</html>

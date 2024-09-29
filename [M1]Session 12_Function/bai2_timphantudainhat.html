@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm phần tử dài nhất</title>
+</head>
+<body>
+    <h1>Bài 2: Tìm phần tử dài nhất</h1>
+    <script>
+        //Nhập mảng bất kỳ
+        let arrLength = +prompt("Nhập số phần tử của chuỗi");
+        let ramdomArray = [];
+        for(let i = 0; i < arrLength; i++){   
+            let n = prompt("nhập phần tử thứ " + (i + 1) +" của chuỗi");
+            ramdomArray.push(n);
+        }
+        // function tìm phần tử dài nhất
+        function findLongestElement(arr){
+            let longest = arr[0];
+            for(let i = 1; i < arr.length; i++){
+                if(arr[i].length > longest.length ){
+                    longest = arr[i];
+                }
+            }
+            return longest;
+        }
+        //Gọi hàm
+        let longestElement = findLongestElement(ramdomArray);
+        console.log("Phần tử có độ dài lớn nhất là: ", longestElement);
+    </script>
+</body>
+</html>

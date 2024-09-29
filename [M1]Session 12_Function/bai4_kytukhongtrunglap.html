@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ký tự không trùng lặp</title>
+</head>
+<body>
+    <h1>Bài 4: Ký tự trùng lặp </h1>
+    <script>
+        let arrLength = +prompt("Nhap so luong phan tu cua chuoi");
+        let randomArray = [];
+        for( let i = 0; i < arrLength; i++){
+            let n = prompt("Nhap vao phan tu cua chuoi");
+            randomArray.push(n);
+        }
+        let character = prompt("Nhap ki tu can tim kiem");
+        function countNumberOfOccurrences(arr, char){
+            let count = 0;
+            for(let i = 0; i < arr.length; i++){
+                for(let j = 0; j < arr[i].length; j++){
+                    if(arr[i][j] === char){
+                    count += 1;
+                    }
+                }
+            }
+            return count ;
+        }
+        let result = countNumberOfOccurrences(randomArray, character);
+        console.log("So lan xuat hien cua ki tu " + character + " trong chuoi la:", result);
+    </script>
+</body>
+</html>
