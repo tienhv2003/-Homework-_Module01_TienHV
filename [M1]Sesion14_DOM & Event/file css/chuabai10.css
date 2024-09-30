@@ -1,0 +1,10 @@
+.products{
+    display:flex;
+    background-color:red;
+
+}
+
+.item{
+    width: 30%;
+    
+}

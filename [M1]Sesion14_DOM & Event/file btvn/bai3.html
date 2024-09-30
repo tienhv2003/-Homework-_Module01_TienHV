@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            color: black;
+            background-color: rgb(84, 169, 249);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;   
+        }
+        .btn:hover{
+            background-color: rgb(129, 129, 201);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>This text is optional</h1>
+    <button class="btn">Press to say hide text</button>
+    <script>
+        document.getElementsByClassName("btn")[0].onclick = displayHideContent;
+        function displayHideContent(){
+            document.getElementsByTagName("h1")[0].innerHTML = "Text after change";
+        }
+    </script>
+</body>
+</html>
