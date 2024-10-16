@@ -5,6 +5,7 @@
 }
 
 #confirmLogout{
+    display: hidden;
     position: relative;
     border: solid 1px #bb2227;
     width: 450px;
@@ -24,6 +25,16 @@
     border-radius: 5px;
     padding:5px 30px;
     margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#confirmBtnY:hover{
+    background-color: aliceblue;
+}
+
+#confirmBtnY a{
+    text-decoration: none;
+    color: #bb2227;
 }
 
 #confirmBtnN{
@@ -33,7 +44,13 @@
     margin-bottom: 20px;
     background-color: #bb2227;
     color:white;
+    cursor: pointer;
 }
+
+#confirmBtnN:hover{
+    background-color:#bb2134;
+}
+
 
 #confirmLogout #spanX{
     position: fixed;

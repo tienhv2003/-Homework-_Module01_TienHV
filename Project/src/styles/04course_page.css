@@ -1,0 +1,15 @@
+#sidebar_1{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#sidebar_2{
+   background-color:#cfcccc;   
+}
+
+#maincontent{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+
+}

@@ -20,7 +20,8 @@
     margin-top:30px;
     margin-left: 20px;
 }
-tr{
+
+.sidebar_table tr{
     border-bottom: solid 2px #bb2227;
 }
 
