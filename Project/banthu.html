@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="./src/styles/banthu.css">
 </head>
 <body>
@@ -14,9 +15,32 @@
                 <p id="quote">Để nông dân biết code</p>
             </div>
             <div class="box_2 box"><h3>HỆ THỐNG QUẢN LÝ SINH VIÊN RIKKEI</h3></div>
-            <div class="box_3 box"><button id="btn_logout">Đăng xuất</button></div>
+            <div class="box_3 box"><a href="./layout7_logout.html"><button id="btn_logout">Đăng xuất</button></a></div>
         </div>
-        <div class="item-2 item"></div>
+        <div class="item-2 item" >
+            <table class=" sidebar_table">
+                <tr class="sidebar_padding sidebar_pointer " id="sidebar_1">
+                  <td class="sidebar_padding"><i class="fa-solid fa-house" style="color: #bb2227;"></i></td>
+                  <td class="sidebar_padding ">Bảng điều khiển</td>
+                </tr>
+                <tr class="sidebar_padding sidebar_pointer " id="sidebar_2">
+                  <td class="sidebar_padding"><i class="fa-solid fa-school" style="color: #bb2227;"></i></td>
+                  <td class="sidebar_padding ">Quản lý khóa học</td>
+                </tr>
+                <tr class="sidebar_padding sidebar_pointer " id="sidebar_3">
+                  <td class="sidebar_padding"><i class="fa-solid fa-book" style="color: #bb2227;"></i></td>
+                  <td class="sidebar_padding ">Quản lý lớp học </td>
+                </tr>
+                <tr class="sidebar_padding sidebar_pointer" id="sidebar_4">
+                  <td class="sidebar_padding"><i class="fa-solid fa-people-group" style="color: #bb2227;"></i></td>
+                  <td class="sidebar_padding ">Quản lý sinh viên</td>
+                </tr>
+                <tr class="sidebar_padding sidebar_pointer " id="sidebar_5">
+                  <td class="sidebar_padding"><i class="fa-solid fa-user" style="color: #bb2227;"></i></td>
+                  <td class="sidebar_padding">Quản lý tài khoản</td>
+                </tr>
+              </table>
+        </div>
         
         
         <div class="item-3 item">
@@ -25,7 +49,7 @@
                     <h5>QUẢN LÝ KHÓA HỌC</h5>
                 </div>
                 <div id="row_2">
-                    <div id="row_2_addNew">Thêm mới</div>
+                    <a id="row_2_addNew">Thêm mới</a>
                     <div id="row_2_search">
                         <input id=""type="text" placeholder="Nhập từ khóa học tìm kiếm">
                         <button id="row_2_btnSearch">Tìm kiếm</button>
@@ -52,7 +76,7 @@
             </div>
             
                 <div class="modal" id="form_addNew">
-                    <h2>Modal - Thêm mới khóa học</h2>
+                    <h2>Modal - Thêm mới khóa học</h2><span id="x-btn-addnewform">x</span>
                     <form>
                         <div class="form-group">
                             <label for="ma-khoa-hoc">Mã khóa học <span class="required">(*)</span></label>
@@ -74,7 +98,7 @@
                             <label for="khong-hoat-dong">Không hoạt động</label>
                         </div>
                         <div class="form-group buttons">
-                            <button type="submit" id="btn_addnewform">Thêm mới</button>
+                            <button type="button" id="btn_addnewform">Thêm mới</button>
                             <button type="button" id="btn_closeform">Đóng</button>
                         </div>
                     </form>
@@ -84,11 +108,17 @@
 
 
 
-        <div class="item-4 item"></div>
+        <div class="item-4 item">
+            
+        </div>
+        
         <div class="item-5 item"></div>
     </div>
 
+
     <script src="./src/scripts/04course_page.js"></script>
     <script src="./src/utils/02_login_import-fake-data.js"></script>
+    <script src="https://kit.fontawesome.com/09ced5449c.js" crossorigin="anonymous"></script> 
+    
 </body>
 </html>

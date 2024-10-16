@@ -4,9 +4,11 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
 .item{
     /* background-color: gold; */
-    border: 1px solid #bb2227;
+    /* border: 1px solid #bb2227; */
     min-height: 50px;
 }
 
@@ -28,11 +30,10 @@
     height: 100px;
     border: none;
     border-bottom: #bb2227 solid 1px;
-    /* cho header luôn treo ở đầu trang */
-    /* position: fixed;
-    top: 0;
-    left: 0;*/
-    /* background-color:yellow ;  */
+    background-color: white;
+    /* position:fixed;
+    top:0;
+    z-index: 1000; */
 }
 
 .box{
@@ -56,7 +57,8 @@
 
 .box_3{
     /* background-color: red; */
-    width: 100px;
+    width: 200px;
+    position: relative;
 }
 
 
@@ -64,37 +66,45 @@
 
 .item-2{
     grid-area: sidebar_left;
+    border-right: solid 1px #bb2227;
 }
 .item-3{
     grid-area: content;
+    z-index: -1;
 }
 .item-4{
-    grid-area: sidebar_right
+    grid-area: sidebar_right;
+    border-left: solid  1px #bb2227;
 }
 .item-5{
     grid-area: footer;
+    /* position: fixed;
+    bottom: 0; */
+    background-color: white;
+    border-top: 1px solid #bb2227;
 }
 
 
 /* Css chi tiet cho Item1 (header) */
 #img1 {
     padding: 0;
-    height: 99px;
+    height: 98.5px;
     margin: 0;
 }
 
 
 #quote {
-    position: fixed;
+    position: absolute;
     top:65px;
-    left: 140px;
+    left: 100px;
     font-style: italic;
 }
 
 #btn_logout {
-    position:fixed;
-    right: 25px;
-    top:60px;
+    position:absolute;
+    right: 30px;
+    top:50px;
+    width: 130px;
     padding: 7px 25px ;
     border-radius: 7px;
 
@@ -154,10 +164,10 @@
     justify-content: center;
 }
 
-table{
+#row_3 table{
     width: 800px;
 }
-table, th, td {
+#row_3 table,  #row_3 th, #row_3 td {
     border: 1px solid black;
     border-collapse: collapse;
     font-size: 12px;
@@ -186,10 +196,11 @@ table, th, td {
     background-color: white;
     padding: 20px;
     border: 1px solid #000;
-    width: 500px;
-    border-radius: 0;
-    box-shadow: none;
+    width: 700px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     position: relative;
+    margin-left: 120px;
 }
 
 
@@ -211,7 +222,7 @@ label {
     font-size: 14px;
     color: black;
     display: inline-block;
-    text-align: right;
+    text-align: left;
     margin-right: 10px;
 }
 
@@ -219,7 +230,7 @@ input[type="text"] {
     width: 100%;
     padding: 5px;
     border: 1px solid #000;
-    border-radius: 0;
+    border-radius: 3px;
 }
 
 input[type="radio"] {
@@ -246,9 +257,8 @@ button {
     cursor: pointer;
 }
 
-button[type="submit"] {
-    background-color: #ddd;
-}
+
+
 
 button[type="button"] {
     background-color: #ddd;
@@ -283,4 +293,61 @@ button:hover {
     background-color: transparent;
     font-size: 14px;
     cursor: pointer;
+}
+
+#x-btn-addnewform{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color:none;
+    color: #458f95;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#x-btn-addnewform:hover{
+    background-color: #ff0000;
+    color: white;
+}
+
+
+
+
+/* Css cho sidebar_left */
+#sidebar {
+    
+    position: fixed;
+    height: 100%;
+    padding-top:100px;
+    padding-bottom:100px;
+    border-right: solid 1px #bb2227;
+    margin-bottom: 100px;
+    border-bottom: solid 1px #bb2227;
+}
+
+.sidebar_padding{
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color:#bb2227;
+    border-bottom: solid 2px #bb2227;
+
+}
+.sidebar_table{
+    margin-top:30px;
+    margin-left: 20px;
+}
+
+#sidebar_2{
+    background-color:#cfcccc;
+}
+
+.sidebar_pointer{
+    cursor: pointer;
+}
+
+.sidebar_pointer:hover{
+    background-color:#cfcccc;
 }

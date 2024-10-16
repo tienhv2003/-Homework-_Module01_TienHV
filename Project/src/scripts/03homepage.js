@@ -16,7 +16,7 @@ sidebar_1.onclick = function(){
     window.location.href = "03homepage.html";
 }
 sidebar_2.onclick = function(){
-    window.location.href = "04course_page.html";
+    window.location.href = "banthu.html";
 }
 sidebar_3.onclick = function(){
     window.location.href = "";

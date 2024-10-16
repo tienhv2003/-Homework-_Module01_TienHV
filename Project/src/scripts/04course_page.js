@@ -49,19 +49,31 @@ renderCourseList();
 
 // Function thêm mới khóa học
 let formAddNew = document.getElementById("form_addNew");
+console.log(formAddNew)
 let btnAddNew = document.getElementById("row_2_addNew");
 let dataTable = document.getElementById("dataTable");
+let row2 = document.getElementById("row_2");
 let btnCloseForm = document.getElementById("btn_closeform");
+let xBtnAddNewForm = document.getElementById("x-btn-addnewform");
 
 // Ẩn hiện form  
-btnAddNew.onclick = function(){
+btnAddNew.addEventListener('click',function(){
+    console.log("có vào đấy");
     dataTable.style.display = "none";
+    row2.style.display = "none";
     formAddNew.style.display = "block"; // Form (ẩn)-> hiện ra
-}
+});
 
 btnCloseForm.onclick = function(){
     formAddNew.style.display = "none";
     dataTable.style.display = "";
+    row2.style.display = "";
+}
+
+xBtnAddNewForm.onclick = function(){
+    formAddNew.style.display = "none";
+    dataTable.style.display = "";
+    row2.style.display = "";
 }
 
 // Thêm data vào localStorage
